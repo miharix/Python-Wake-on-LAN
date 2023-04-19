@@ -34,6 +34,6 @@ if len(broadcast_range) == 0:
 elif len(broadcast_range) != 0:
     # Send packet to ip address
     broadcast_protocol = 9
-    wakeonlan.packet_broadcasting(payload, broadcast_range, broadcast_protocol)
+    wakeonlan.packet_broadcasting(payload, False, broadcast_range, broadcast_protocol)
     print(f"{time_sending} | Magic Packet Sending ...")
     sys.exit(0)
