@@ -51,7 +51,7 @@ def wake_up():
                 # Default sending port
                 broadcast_protocol = 9
                 # Sending magic packet
-                wakeonlan.packet_broadcasting(payload, broadcast_range, broadcast_protocol)
+                wakeonlan.packet_broadcasting(payload, False, broadcast_range, broadcast_protocol)
                 input_status.set("     Magic Packet Sending     ")
                 del address
                 del payload_string
